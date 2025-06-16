@@ -1,0 +1,61 @@
+/* ===== HERO BANNER ALTERNATIVO ===== */
+.hero-banner {
+  height: 90vh;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  
+  /* Efeito de "energia" abstrato */
+  &::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background: 
+      radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%),
+      repeating-conic-gradient(from 0deg, transparent 0deg 15deg, rgba(255,255,255,0.05) 15deg 30deg);
+    animation: rotateBG 60s linear infinite;
+    z-index: 0;
+  }
+
+  h1 {
+    position: relative;
+    z-index: 1;
+    /* resto do estilo mantido */
+  }
+
+  button {
+    position: relative;
+    z-index: 1;
+    /* resto do estilo mantido */
+  }
+}
+
+@keyframes rotateBG {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ===== CARDS COM ÍCONES ===== */
+.highlights mat-card {
+  background: white;
+  border: 1px solid rgba(0,0,0,0.05);
+  
+  mat-icon {
+    background: linear-gradient(to right, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 3.5rem !important;
+    margin-bottom: 1.5rem;
+  }
+}

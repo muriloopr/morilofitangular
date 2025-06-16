@@ -1,0 +1,25 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  margin-left: 8px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+mat-icon {
+  color: white; /* ou black se usar toolbar clara */
+}
+
+.title {
+  border-style: groove;
+  border-width: medium;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem; /* <-- Aqui está o espaçamento interno */
+}

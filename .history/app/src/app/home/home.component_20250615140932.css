@@ -1,0 +1,113 @@
+/* ===== VARIÁVEIS ===== */
+:root {
+  --primary: #3f51b5;       /* Azul Principal */
+  --primary-dark: #303f9f;  /* Azul Escuro */
+  --accent: #ff4081;        /* Rosa/vermelho */
+  --light: #f5f5f5;
+  --dark: #212121;
+}
+
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+/* ===== TOOLBAR ===== */
+mat-toolbar {
+  background: var(--primary) !important;
+  color: white;
+  padding: 0 16px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  
+  .title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s;
+    
+    &:hover {
+      opacity: 0.9;
+      transform: translateX(2px);
+    }
+  }
+  
+  button {
+    transition: all 0.2s;
+    
+    &:hover {
+      color: var(--accent);
+      transform: scale(1.1);
+    }
+  }
+}
+
+/* ===== CONTEÚDO PRINCIPAL ===== */
+main {
+  min-height: calc(100vh - 64px);
+  padding: 20px;
+}
+
+/* ===== BOTÕES ===== */
+.mat-button, .mat-raised-button {
+  &.primary {
+    background: var(--primary);
+    color: white;
+    
+    &:hover {
+      background: var(--primary-dark);
+    }
+  }
+  
+  &.accent {
+    background: var(--accent);
+    color: white;
+  }
+}
+
+/* ===== CARDS ===== */
+mat-card {
+  margin: 16px;
+  transition: all 0.3s;
+  border-radius: 8px !important;
+  
+  &:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+  }
+  
+  mat-card-title {
+    color: var(--primary);
+    font-weight: 500;
+  }
+}
+
+/* ===== EFEITOS ===== */
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 600px) {
+  mat-toolbar {
+    padding: 0 8px;
+    
+    .title {
+      font-size: 1.2rem;
+    }
+  }
+}

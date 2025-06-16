@@ -1,0 +1,23 @@
+<!-- Toolbar fixa no topo -->
+<mat-toolbar color="primary" class="toolbar">
+  <span class="title">MoriloFit</span>
+  
+  <span class="spacer"></span>
+  <button mat-icon-button aria-label="Login" routerLink="/login">
+    <mat-icon>login</mat-icon>
+  </button>
+  <button mat-icon-button aria-label="About" routerLink="/about">
+    <mat-icon>info</mat-icon>
+  </button>
+  <button mat-icon-button aria-label="Contact" routerLink="/contact">
+    <mat-icon>email</mat-icon>
+  </button>
+  <button mat-icon-button aria-label="Settings" routerLink="/settings">
+    <mat-icon>settings</mat-icon>
+  </button>
+</mat-toolbar>
+
+<!-- Container principal que será substituído pelo router -->
+<main>
+  <router-outlet></router-outlet>
+</main>
