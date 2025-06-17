@@ -9,11 +9,17 @@ import { LoginComponent } from './login/login.component';
 import { AboutComponent } from './about/about.component';
 import { SettingsComponent } from './settings/settings.component';
 import { CrudComponent } from './crud/crud.component';
+import {MatMenuModule} from '@angular/material/menu';
+import { MatDividerModule } from '@angular/material/divider';
+
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterModule, RouterOutlet, MatToolbarModule, MatButtonModule,MatIconModule, HomeComponent, LoginComponent, AboutComponent, SettingsComponent, CrudComponent],
+  imports: [CommonModule, RouterModule, RouterOutlet, MatToolbarModule, MatButtonModule, MatIconModule, HomeComponent, LoginComponent, AboutComponent, SettingsComponent, CrudComponent, MatMenuModule,
+    MatDividerModule
+  ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

@@ -1,14 +1,13 @@
-/* Cores base */
+/* cores base */
 :root {
-  --primary-color: #673AB7; /* Roxo */
-  --accent-color: #9575CD;  /* Roxo claro */
-  --background-color: #121212; /* Preto escuro */
+  --primary-color: #673AB7;
+  --accent-color: #9575CD;
+  --background-color: #121212;
   --card-background: #1E1E1E;
   --text-color: #FFFFFF;
   --secondary-text: #B0BEC5;
 }
 
-/* Estilo geral da página */
 body {
   background-color: var(--background-color);
   color: var(--text-color);
@@ -16,7 +15,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* Hero Banner */
 .hero-banner {
   background: linear-gradient(to right, #512DA8, #673AB7);
   text-align: center;
@@ -29,7 +27,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* Destaques */
 .highlights {
   display: flex;
   justify-content: space-around;
@@ -60,7 +57,6 @@ mat-icon {
   margin-bottom: 10px;
 }
 
-/* Call to Action */
 .cta-section {
   background-color: var(--card-background);
   text-align: center;
