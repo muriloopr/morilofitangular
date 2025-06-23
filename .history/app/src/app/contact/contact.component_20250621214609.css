@@ -1,0 +1,145 @@
+:root {
+  --primary-color: #673AB7;
+  --accent-color: #9575CD;
+  --background-color: #121212;
+  --alt-background: #1A1A1A;
+  --card-background: #1E1E1E;
+  --text-color: #FFFFFF;
+  --secondary-text: #B0BEC5;
+  --success-color: #81C784;
+  --warn-color: #EF5350;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: var(--accent-color);
+}
+
+/* === HIGHLIGHTS === */
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  background-color: var(--alt-background);
+}
+
+.highlights mat-card {
+  background-color: var(--card-background);
+  padding: 24px;
+  text-align: center;
+}
+
+mat-icon {
+  font-size: 32px;
+  color: var(--accent-color);
+  margin-bottom: 12px;
+}
+
+/* === MAP SECTION === */
+.map-section {
+  background-color: var(--background-color);
+}
+
+iframe {
+  border: 0;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+/* === CONTACT FORM === */
+.contact-form-section {
+  background-color: var(--alt-background);
+  max-width: 700px;
+  margin: auto;
+}
+
+.contact-form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.contact-form button {
+  align-self: flex-end;
+  width: fit-content;
+  padding: 12px 24px;
+}
+
+/* === MENSAGENS RECEBIDAS === */
+.mensagens-section {
+  background-color: var(--background-color);
+  max-width: 900px;
+  margin: auto;
+}
+
+.mensagens-section mat-card {
+  position: relative;
+  padding: 20px;
+  border-left: 4px solid var(--accent-color);
+  margin-bottom: 16px;
+}
+
+.mensagens-section h3 {
+  margin: 0 0 8px;
+}
+
+.mensagens-section p {
+  margin: 0;
+}
+
+.mensagens-section button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* === TESTIMONIALS === */
+.testimonials-section {
+  background-color: var(--alt-background);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.testimonial-card {
+  background-color: var(--card-background);
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.testimonial-card p {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.testimonial-card h4 {
+  text-align: right;
+  margin-top: 12px;
+  color: var(--secondary-text);
+}
+
+.stars {
+  display: flex;
+  gap: 4px;
+  color: gold;
+  font-size: 20px;
+  margin: 10px 0;
+}

@@ -1,0 +1,103 @@
+<div class="highlights">
+  <mat-card>
+    <mat-icon>email</mat-icon>
+    <h3>Nosso email:</h3>
+    <h4>morilofit&#64;fitnessmorilo.com</h4>
+  </mat-card>
+  <mat-card>
+    <mat-icon>phone</mat-icon>
+    <h3>Nosso número</h3>
+    <h4>4002-8922</h4>
+  </mat-card>
+  <mat-card>
+    <mat-icon>pin_drop</mat-icon>
+    <h3>Nossa sede</h3>
+    <h4>Rua Bassi 243</h4>
+  </mat-card>
+</div>
+
+<section class="map-section">
+  <h2>Onde estamos</h2>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.963783169165!2d-46.658790084498934!3d-23.563987084686367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59bf085a05bb%3A0x837ecae9c94a8eac!2sRua%20Bassi%2C%20243%20-%20S%C3%A3o%20Paulo%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1686969999999!5m2!1spt-BR!2sbr"
+    width="100%"
+    height="300"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    title="Mapa da localização da academia"
+  ></iframe>
+</section>
+
+<section class="contact-form-section">
+  <h2>Fale conosco</h2>
+  <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" class="contact-form">
+
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Nome</mat-label>
+      <input matInput required name="name" ngModel />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Email</mat-label>
+      <input matInput type="email" required name="email" ngModel />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Mensagem</mat-label>
+      <textarea matInput required name="message" ngModel rows="4"></textarea>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit" [disabled]="contactForm.invalid">
+      Enviar
+    </button>
+  </form>
+</section>
+
+<section class="testimonials-section">
+  <h2>O que nossos alunos dizem</h2>
+
+  <mat-card class="testimonial-card">
+    <p>
+      "A estrutura da academia é fantástica, e os treinos são muito eficientes. Adoro a zumba!"
+    </p>
+    <div class="stars">
+      <mat-icon>star</mat-icon>
+      <mat-icon>star</mat-icon>
+      <mat-icon>star</mat-icon>
+      <mat-icon>star</mat-icon>
+      <mat-icon>star</mat-icon>
+    </div>
+    <h4>- Alvin da Silva Lima</h4>
+  </mat-card>
+
+  <mat-card class="testimonial-card">
+    <p>
+      "sou gay"
+    </p>
+    <div class="stars">
+      <mat-icon>star</mat-icon>
+      <mat-icon>star</mat-icon>
+      <mat-icon>star</mat-icon>
+      <mat-icon>star</mat-icon>
+      <mat-icon>star</mat-icon>
+    </div>
+    <h4>- Ordep MC</h4>
+  </mat-card>
+
+  <mat-card class="testimonial-card">
+    <p>
+      "Yeah Buddy"
+    </p>
+    <div class="stars">
+      <mat-icon>star</mat-icon>
+      <mat-icon>star</mat-icon>
+      <mat-icon>star</mat-icon>
+      <mat-icon>star</mat-icon>
+      <mat-icon>star</mat-icon>
+    </div>
+    <h4>- Ronnie Coleman</h4>
+  </mat-card>
+</section>
+

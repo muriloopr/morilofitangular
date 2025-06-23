@@ -1,0 +1,74 @@
+/* Estilo padrão (light mode) */
+.login-container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 24px;
+  background-color: #ffffff; /* Fundo branco */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+  color: #333333; /* Texto escuro */
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color: #673ab7; /* Roxo principal */
+  margin-bottom: 24px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #dddddd; /* Borda sutil */
+  outline: none;
+  font-size: 16px;
+  background-color: #f9f9f9; /* Fundo claro para inputs */
+  color: #333333; /* Texto escuro */
+}
+
+/* Estilo para dark mode - será aplicado via classe */
+.dark-theme .login-container {
+  background-color: #1e1e1e;
+  color: white;
+  box-shadow: 0 4px 10px rgba(103, 58, 183, 0.5);
+}
+
+.dark-theme input {
+  background-color: #121212;
+  color: white;
+  border-color: #333;
+}
+
+/* O resto do CSS permanece igual */
+input:focus {
+  border: 2px solid #673ab7;
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #673ab7;
+  border: none;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #9575cd;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #512da8;
+}
+
+.error-message {
+  color: #ef5350;
+  margin-top: 16px;
+  text-align: center;
+}

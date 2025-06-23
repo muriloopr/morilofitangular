@@ -1,0 +1,33 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+.login-container {
+  background-color: var(--card-background);
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(103, 58, 183, 0.3);
+  width: 320px;
+  color: var(--text-color);
+}
+
+.login-container h2 {
+  margin-bottom: 24px;
+  color: var(--accent-color);
+  text-align: center;
+}
+
+.full-width {
+  width: 100%;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+}

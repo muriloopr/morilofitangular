@@ -1,0 +1,53 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body {
+  user-select: none;
+  -webkit-user-select: none; /* Chrome, Safari, Opera */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE/Edge */
+}
+
+body, .mat-app-background {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+:root {
+  /* cores padrão (light mode) */
+  --primary-color: #673AB7;
+  --accent-color: #9575CD;
+  --background-color: #ffffff;
+  --card-background: #f9f9f9;
+  --text-color: #333333;
+  --secondary-text: #757575;
+  --input-bg: #f9f9f9;
+  --input-border: #dddddd;
+  --button-bg: #673AB7;
+  --button-bg-hover: #512da8;
+  --button-disabled-bg: #9575cd;
+  --error-color: #ef5350;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+/* Dark mode */
+body.dark-theme {
+  --background-color: #121212;
+  --card-background: #1E1E1E;
+  --text-color: #FFFFFF;
+  --secondary-text: #B0BEC5;
+  --input-bg: #121212;
+  --input-border: #333333;
+  --button-bg: #673AB7;
+  --button-bg-hover: #512da8;
+  --button-disabled-bg: #9575cd;
+  --error-color: #ef5350;
+}

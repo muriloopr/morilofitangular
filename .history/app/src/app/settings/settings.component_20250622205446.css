@@ -1,0 +1,58 @@
+:root {
+  --primary-color: #673AB7;
+  --accent-color: #9575CD;
+  --background-color: #121212;
+  --card-background: #1E1E1E;
+  --text-color: #FFFFFF;
+  --secondary-text: #B0BEC5;
+}
+
+body.dark-theme {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Settings container */
+.settings-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: var(--card-background);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  color: var(--text-color);
+}
+
+/* Cada item */
+.setting-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+
+.setting-item label {
+  font-weight: 600;
+  font-size: 16px;
+  user-select: none;
+  color: var(--text-color);
+}
+
+/* Mat-slide-toggle custom */
+body.dark-theme .mat-slide-toggle-thumb {
+  background-color: var(--accent-color);
+}
+
+body.dark-theme .mat-slide-toggle-bar {
+  background-color: rgba(149, 117, 205, 0.5);
+}
+
+body.dark-theme .mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+  background-color: var(--accent-color);
+}
+
+/* Título */
+h2 {
+  margin-bottom: 24px;
+  color: var(--accent-color);
+}

@@ -1,0 +1,61 @@
+:root {
+  --primary-color: #673AB7;
+  --accent-color: #9575CD;
+  --background-color: #121212;
+  --card-background: #1E1E1E;
+  --text-color: #FFFFFF;
+  --secondary-text: #B0BEC5;
+}
+
+body.dark-theme {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.settings-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: var(--card-background);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  color: var(--text-color);
+}
+
+.setting-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+
+h2 {
+  margin-bottom: 24px;
+  color: var(--accent-color);
+}
+
+/* Remove SOMENTE o hover, mantendo animações */
+.settings-container button,
+.settings-container .mat-button,
+.settings-container .mat-icon-button,
+.settings-container .mat-slide-toggle {
+  --hover-intensity: 0; /* Variável para controle */
+}
+
+/* Remove efeitos visuais de hover */
+.settings-container button:hover,
+.settings-container .mat-button:hover,
+.settings-container .mat-icon-button:hover {
+  background-color: var(--button-bg) !important;
+  color: inherit !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+/* Mantém animações não-relacionadas a hover */
+.settings-container button,
+.settings-container .mat-button {
+  transition: 
+    transform 0.3s ease, 
+    opacity 0.3s ease; /* Exemplo: mantém outras animações */
+}

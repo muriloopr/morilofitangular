@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body, .mat-app-background {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* modo claro (padrão) */
+:root {
+  --primary-color: #673AB7;
+  --accent-color: #9575CD;
+  --background-color: #ffffff;  /* claro */
+  --card-background: #f5f5f5;   /* claro */
+  --text-color: #000000;        /* preto */
+  --secondary-text: #555555;
+}
+
+/* modo escuro */
+body.dark-theme {
+  --background-color: #121212;
+  --card-background: #1E1E1E;
+  --text-color: #FFFFFF;
+  --secondary-text: #B0BEC5;
+}

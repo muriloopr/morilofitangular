@@ -1,0 +1,12 @@
+<div class="settings-container">
+  <h2>Configurações</h2>
+
+  <div class="setting-item">
+    <label for="darkModeToggle">Modo escuro</label>
+    <mat-slide-toggle
+      id="darkModeToggle"
+      [checked]="darkMode"
+      (change)="toggleDarkMode($event.checked)">
+    </mat-slide-toggle>
+  </div>
+</div>

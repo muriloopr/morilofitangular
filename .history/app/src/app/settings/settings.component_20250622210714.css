@@ -1,0 +1,55 @@
+:root {
+  --primary-color: #673AB7;
+  --accent-color: #9575CD;
+  --background-color: #121212;
+  --card-background: #1E1E1E;
+  --text-color: #FFFFFF;
+  --secondary-text: #B0BEC5;
+}
+
+body.dark-theme {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.settings-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: var(--card-background);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  color: var(--text-color);
+}
+
+.setting-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+
+h2 {
+  margin-bottom: 24px;
+  color: var(--accent-color);
+}
+
+/* Limita a área de hover do mat-slide-toggle */
+::ng-deep .mat-slide-toggle {
+  border-radius: 999px;
+  overflow: hidden;
+  padding: 4px;
+}
+
+/* Impede o hover de vazar para fora */
+::ng-deep .mat-slide-toggle:hover .mat-slide-toggle-bar {
+  background-color: rgba(103, 58, 183, 0.15);
+}
+
+/* Garante que o container não expanda */
+.setting-item {
+  overflow: hidden;
+  padding: 8px;
+  border-radius: 12px;
+}
+

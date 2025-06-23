@@ -1,0 +1,61 @@
+<!-- toolbar fixa no topo -->
+<mat-toolbar color="primary" class="toolbar">
+  <span class="title" routerLink="/home">MoriloFit</span>
+
+  <span class="spacer"></span>
+  <button mat-icon-button aria-label="Login" routerLink="/login">
+    <mat-icon>login</mat-icon>
+  </button>
+  <button mat-icon-button aria-label="About" routerLink="/about">
+    <mat-icon>info</mat-icon>
+  </button>
+
+<button
+  mat-icon-button
+  #menuTrigger="matMenuTrigger"
+  [matMenuTriggerFor]="menu"
+  aria-label="Contato"
+  (mouseenter)="menuTrigger.openMenu()">
+
+  <mat-icon>email</mat-icon>
+</button>
+
+<button
+  mat-icon-button
+  #menuTrigger="matMenuTrigger"
+  [matMenuTriggerFor]="menu"
+  aria-label="Contato"
+  (mouseenter)="menuTrigger.openMenu()">
+  <mat-icon>email</mat-icon>
+</button>
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item disabled>
+    <mat-icon>email</mat-icon>
+    <span>morilofit&#64;fitnessmorilo.com</span>
+  </button>
+
+  <button mat-menu-item disabled>
+    <mat-icon>phone</mat-icon>
+    <span>4002-8922</span>
+  </button>
+
+  <mat-divider></mat-divider>
+
+  <button 
+    mat-menu-item 
+    (click)="$event.preventDefault(); menuTrigger.closeMenu(); router.navigate(['/contact'])">
+    <mat-icon>contact_page</mat-icon>
+    <span>Ir para página Contato</span>
+  </button>
+</mat-menu>
+
+
+  <button mat-icon-button aria-label="Settings" routerLink="/settings">
+    <mat-icon>settings</mat-icon>
+  </button>
+</mat-toolbar>
+
+<main>
+  <router-outlet></router-outlet>
+</main>

@@ -1,0 +1,127 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body {
+  user-select: none;
+  -webkit-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+}
+
+body, .mat-app-background {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* cor padrão*/
+:root {
+  --primary-color: #673AB7;
+  --accent-color: #9575CD;
+  --background-color: #ffffff;
+  --card-background: #f9f9f9;
+  --text-color: #333333;
+  --secondary-text: #757575;
+  --input-bg: #f9f9f9;
+  --input-border: #dddddd;
+  --button-bg: #673AB7;
+  --button-bg-hover: #512da8;
+  --button-disabled-bg: #9575cd;
+  --error-color: #ef5350;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+/* dark mode */
+body.dark-theme {
+  --background-color: #121212;
+  --card-background: #1E1E1E;
+  --text-color: #FFFFFF;
+  --secondary-text: #B0BEC5;
+  --input-bg: #121212;
+  --input-border: #333333;
+  --button-bg: #673AB7;
+  --button-bg-hover: #512da8;
+  --button-disabled-bg: #9575cd;
+  --error-color: #ef5350;
+}
+
+body.sem-animacoes * {
+  transition: none !important;
+  animation: none !important;
+}
+
+
+/* Botões padrão */
+button, .mat-button, .mat-raised-button, .mat-flat-button, .mat-stroked-button, .mat-icon-button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 10px 18px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  box-shadow: 0 2px 5px rgba(103, 58, 183, 0.2);
+  color: white;
+  background-color: #673AB7; /* Roxo padrão */
+}
+
+/* Hover */
+button:hover, 
+.mat-button:hover, 
+.mat-raised-button:hover, 
+.mat-flat-button:hover, 
+.mat-stroked-button:hover, 
+.mat-icon-button:hover {
+  background-color: #512DA8; /* Roxo escuro no hover */
+  box-shadow: 0 4px 15px rgba(103, 58, 183, 0.4);
+}
+
+/* Desabilitado */
+button:disabled, 
+.mat-button:disabled, 
+.mat-raised-button:disabled, 
+.mat-flat-button:disabled, 
+.mat-stroked-button:disabled, 
+.mat-icon-button:disabled {
+  background-color: #B39DDB;
+  color: #eee;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.mat-dialog-actions button {
+  min-width: 80px;
+  font-weight: 600;
+}
+
+.mat-icon-button {
+  padding: 6px;
+  box-shadow: none;
+  background-color: transparent;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+.mat-icon-button:hover {
+  color: #512DA8;
+  background-color: rgba(103, 58, 183, 0.1);
+}
+
+.mat-stroked-button {
+  background-color: transparent;
+  color: #673AB7;
+  border: 2px solid #673AB7;
+}
+
+.mat-stroked-button:hover {
+  background-color: #673AB7;
+  color: white;
+}
